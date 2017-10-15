@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Non Nomine, Inc.</title>
+    <meta charset="UTF-8">
+    <title>Non, Nomine, Inc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Architects+Daughter|Roboto&subset=latin,devanagari'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <p>Non Nomine, Inc.</p>
+
+    <body class="welcome">
+        <span id="splash-overlay" class="splash"></span>
+        <span id="welcome" class="z-depth-4"></span>
+
+        <header class="navbar-fixed">
+            <nav class="row deep-purple darken-3">
+                <div class="col s12">
+                    <ul class="right">
+                        <li class="right">
+                            <a href="http://github.com/nonnomine" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="valign-wrapper">
+            <span class="container grey-text text-lighten-1">
+            <p class="flow-text">Welcome to</p>
+            <h1 class="title grey-text text-lighten-3">Non Nomine, Inc.</h1>
+            <blockquote class="flow-text">Software design and development consultancy</blockquote>      
+          </span>
+        </main>
+
+        <footer class="page-footer deep-purple darken-3">
+            <div class="footer-copyright deep-purple darken-4">
+                <div class="container">
+                    <time datetime="{{ site.time | date: '%Y' }}">&copy; 2017 Non Nomine, Inc.</time>
+                    <span class="right"> 
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> info@nonnomine.com
+                    </span>
+                    <span class="right mr">
+                        <i class="fa fa-mobile" aria-hidden="true"></i> 202.683.9433
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>
